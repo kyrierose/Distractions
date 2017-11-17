@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Content Details</h2>
+
+<p id="demo">Hello</p>
+
+<script type="text/javascript">
+var data = prompt("Enter the content here");
+var i=1;
+var c="";
+for(var index=0;index<data.length-1;index++) {
+    if(data[index] == ' '  && data[index+1]!= ' ')i++;
+}
+alert(c);
+document.getElementById("demo").innerHTML = "The number of words= "+i;
+</script>
+
+</body>
+</html>
